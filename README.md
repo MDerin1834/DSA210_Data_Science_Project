@@ -33,4 +33,5 @@ External Data Sources:
 UN Age Distribution Data: This data includes global population age distribution statistics, which will be used to calculate age scores and assign these scores to colorectal cancer patients based on their reported age.
 ASR Data: The death rate by country data will be sourced from global health reports (e.g., World Health Organization, UN). The ASR data reflects the age-adjusted death rates caused by colorectal cancer in various countries. These country-specific values will help contextualize survival outcomes based on national factors.
 
-By analyzing and enhancing this global data, the projects aims to drive insightful information from olorectal
+The project aims to drive insightful information by analyzing and elaborating on colorectal cancer data and various statistics. Since colorectal cancer accounted for
+12.7% of all new cancer diagnoses and 12.4% of all deaths due to cancer (ENCR, 2021), I believe this project will be helpful breakpoint to spread more awereness about colorectal cancer. 
