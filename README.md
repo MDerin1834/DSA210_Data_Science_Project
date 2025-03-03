@@ -19,33 +19,18 @@ Analyzing the global colorectal cancer dataset, which includes 21 parameters and
 Augmenting the dataset with two additional parameters:
 Age distribution score: Calculated using data from the United Nations, this score categorizes the global population into age groups, which will be assigned to corresponding patients in the dataset. The estimated distrubution of the new cases of colorectal cancer with respect to age is the following: 150 cases among 0 to 19 years old, 6,880 cases among 20 to 44 years old, 138,722 cases among 45 to 69 years old, and 195,667 cases 70+ years old. I standardize these numbers and age distribution scores (ADS) are listed in corresponding order: 0.00044 (age: 0-19), 0.02015 (age: 20-44), 0.40631(age: 45-69), 0.57310 (Age: 70+).
 Source: https://encr.eu/sites/default/files/inline-files/Colorectal_cancer_factsheet_March_2021.pdf [ENCR] 
-Death rates by country (ASR): This score, based on country-specific mortality rates, will enhance the model's ability to account for the impact of healthcare systems and country-level factors on colorectal cancer survival. Sources: Wang, C. C., Sung, W. W., Yan, P. Y., Ko, P. Y., & Tsai, M. C. (2021). Favorable colorectal cancer mortality-to-incidence ratios in countries with high expenditures on health and development index: A study based on GLOBOCAN database. Medicine, 100(41), e27414. https://doi.org/10.1097/MD.0000000000027414 (1) https://www.wcrf.org/preventing-cancer/cancer-statistics/colorectal-cancer-statistics/ [WCRF] (2)
+
+Death rates by country (ASR): This score, based on country-specific mortality rates, will enhance the model's ability to account for the impact of healthcare systems and country-level factors on colorectal cancer survival. I plan to used these scores and implement them in my data using reported country information for each student, which I believe will play a significant role in decision-making performance of the ML model. Sources: Wang, C. C., Sung, W. W., Yan, P. Y., Ko, P. Y., & Tsai, M. C. (2021). Favorable colorectal cancer mortality-to-incidence ratios in countries with high expenditures on health and development index: A study based on GLOBOCAN database. Medicine, 100(41), e27414. https://doi.org/10.1097/MD.0000000000027414 (1) https://www.wcrf.org/preventing-cancer/cancer-statistics/colorectal-cancer-statistics/ [WCRF] (2)
 
 4. Data Description
    
 The project will use the following datasets:
 
 Colorectal Cancer Dataset:
-This dataset contains 21 parameters (e.g., age, gender, stage of cancer, treatment methods, survival outcome) across over 160,000 records of colorectal cancer patients.
+This dataset contains 21 parameters (e.g., age, gender, stage of cancer, country, survival outcome) across over 160,000 records of colorectal cancer patients.
 The parameters are a mix of categorical and numerical variables that describe clinical, demographic, and medical factors influencing colorectal cancer prognosis.
 External Data Sources:
 UN Age Distribution Data: This data includes global population age distribution statistics, which will be used to calculate age scores and assign these scores to colorectal cancer patients based on their reported age.
-ASR Data: The Age-Standardized Death Rate data will be sourced from global health reports (e.g., World Health Organization, UN). The ASR data reflects the age-adjusted death rates caused by colorectal cancer in various countries. These country-specific values will help contextualize survival outcomes based on national factors.
+ASR Data: The death rate by country data will be sourced from global health reports (e.g., World Health Organization, UN). The ASR data reflects the age-adjusted death rates caused by colorectal cancer in various countries. These country-specific values will help contextualize survival outcomes based on national factors.
 
-5. Data Collection Strategy
-Colorectal Cancer Dataset:
-
-The primary dataset will be sourced from a public health database or a research repository that specializes in cancer data, such as the Cancer Genome Atlas (TCGA) or a similar source.
-Data will be filtered to focus on colorectal cancer cases, ensuring it aligns with the research objectives.
-Due to the large size of the dataset (160,000+ records), a random sampling technique will be employed to select a manageable subset of 20,000 records.
-External Data:
-
-Age Distribution Data: The United Nations Population Division provides global population data, which includes age distribution by country. This data will be obtained from the UN’s website or related statistical sources.
-ASR Data: The Age-Standardized Death Rate data will be sourced from international health organizations like the WHO or global cancer registries such as the Global Cancer Observatory (GCO).
-6. Data Preprocessing and Augmentation
-Data Cleaning:
-Any missing or incomplete data in the colorectal cancer dataset will be handled by imputation or removal, depending on the extent of missing values.
-Outliers will be identified and managed using standard statistical methods to prevent model skewing.
-Data Augmentation:
-Age Distribution Scores: After collecting age distribution data from the UN, an age score will be calculated by categorizing patients into different age groups. These scores will be assigned to corresponding records in the colorectal cancer dataset.
-ASR Scores: The ASR data will be merged with the colorectal cancer dataset based on the country of each patient. This will provide a country-based adjustment to the survival prediction.
+By analyzing and enhancing this global data, the projects aims to drive insightful information from olorectal
