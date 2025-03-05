@@ -1,17 +1,18 @@
 # DSA210_Data_Science_Project
+
 [Mustafa Derin 32272]
 
 ## Project Proposal: Colorectal Cancer Prediction Using Global Data
 
-1. Project Overview
+# 1. Project Overview
    
 This project aims to analyze a large global dataset on colorectal cancer (CRC) with the goal of developing a machine learning model that can predict survival outcomes based on various factors. The public dataset contains 26 parameters across over 160,000 records, including demographic and medical data related to colorectal cancer patients from various countries taken from kaggle website https://www.kaggle.com/datasets/ankushpanday2/colorectal-cancer-global-dataset-and-predictions. Given the size and complexity of the dataset, the project will focus on a manageable subset of 20,000 records for analysis. Additionally, the project will incorporate augmented data from external sources, such as age distribution scores and cancer mortality rates (ASR) by country, to enhance the model's predictive performance. This combination of clinical data and contextual country-based information is expected to provide more accurate and insightful predictions.
 
-2. Motivation
+# 2. Motivation
    
 Colorectal cancer is one of the leading causes of cancer-related deaths worldwide. Its incidence and mortality rates vary significantly across different regions due to factors such as healthcare access, lifestyle, diet, and genetics. By analyzing a global dataset, My aim is to identify patterns that can inform early detection and survival prediction strategies. The motivation for this project stems from the need to better understand how factors like age, geographical location, physical features, alcohol or tobacco consupmtion and other demographic information impact colorectal cancer survival rates, thus enabling more tailored healthcare strategies for different regions.
 
-3. Project Goals and Objectives
+# 3. Project Goals and Objectives
    
 The main goal of this project is to understand the most crucial factors leading to death from colorectal cancer. Specific objectives include:
 By analyzing and enchancing the global colorectal cancer dataset, I expect to have less survival ratios in American continents rather than the other continents due to relatively less developed health care systems or less healthy lifestyle ratios, which may be the strong hinderances in one's survival.
@@ -22,7 +23,7 @@ Source: https://encr.eu/sites/default/files/inline-files/Colorectal_cancer_facts
 
 Death rates by country (ASR): This score, based on country-specific mortality rates, will enhance the model's ability to account for the impact of healthcare systems and country-level factors on colorectal cancer survival. I plan to used these scores and implement them in my data using reported country information for each student, which I believe will play a significant role in decision-making performance of the ML model. Sources: Wang, C. C., Sung, W. W., Yan, P. Y., Ko, P. Y., & Tsai, M. C. (2021). Favorable colorectal cancer mortality-to-incidence ratios in countries with high expenditures on health and development index: A study based on GLOBOCAN database. Medicine, 100(41), e27414. https://doi.org/10.1097/MD.0000000000027414 (1) https://www.wcrf.org/preventing-cancer/cancer-statistics/colorectal-cancer-statistics/ [WCRF] (2)
 
-4. Data Description
+# 4. Data Description
    
 The project will use the following datasets:
 
