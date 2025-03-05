@@ -15,7 +15,7 @@ Colorectal cancer is one of the leading causes of cancer-related deaths worldwid
 ### 3. Project Goals and Objectives
    
 The main goal of this project is to understand the most crucial factors leading to death from colorectal cancer. Specific objectives include:
-By analyzing and enchancing the global colorectal cancer dataset, I expect to have less survival ratios in American continents rather than the other continents due to relatively less developed health care systems or less healthy lifestyle ratios, which may be the strong hinderances in one's survival.
+My hypothesis is that it is more likely to have less survival ratios among colorectal cancer patients in American continents rather than the other continents due to relatively less developed health care systems or less healthy lifestyle in American countries, which may be the strong hinderances in one's survival. Also, by further analysis and enhancing the data, the leading causes of deaths from colorectal cancer and crucial factors that may give rise to colorectal cancer will be detailly investigated.
 
 Augmenting the dataset with two additional parameters:
 Age distribution score: Calculated using data from the United Nations, this score categorizes the global population into age groups, which will be assigned to corresponding patients in the dataset. The estimated distrubution of the new cases of colorectal cancer with respect to age is the following: 150 cases among 0 to 19 years old, 6,880 cases among 20 to 44 years old, 138,722 cases among 45 to 69 years old, and 195,667 cases 70+ years old. I standardize these numbers and age distribution scores (ADS) are listed in corresponding order: 0.00044 (age: 0-19), 0.02015 (age: 20-44), 0.40631(age: 45-69), 0.57310 (Age: 70+).
