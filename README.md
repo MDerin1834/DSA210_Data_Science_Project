@@ -1,7 +1,7 @@
 # DSA210_Data_Science_Project
 [Mustafa Derin 32272]
 
-Project Proposal: Colorectal Cancer Prediction Using Global Data
+## Project Proposal: Colorectal Cancer Prediction Using Global Data
 
 1. Project Overview
    
